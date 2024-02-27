@@ -71,7 +71,7 @@ function App() {
 		if (isToken) {
 			dispatch(reconnectUser());
 		}
-	}, [coins]);
+	}, []);
 	// Utilisation du Hook useEffect de React pour effectuer des actions au chargement du composant
 	// Ferme les modales de succès après 10 secondes
 	useEffect(() => {
