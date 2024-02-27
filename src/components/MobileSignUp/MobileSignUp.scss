@@ -1,0 +1,47 @@
+@use '@scssVariables' as v;
+
+.Container-form-signUp-mobile {
+	display: flex;
+	justify-content: flex-end;
+	min-height: calc(100vh - 90px);
+}
+.container-close-icon {
+	display: flex;
+	justify-content: flex-end;
+}
+.form-sign-up-mobile {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	width: 100%;
+	&__input {
+		margin-bottom: 1rem;
+		border-radius: 5px;
+		padding: v.$inp-padding;
+	}
+	&__label {
+		margin-bottom: 0.3rem;
+	}
+	&__btn {
+		margin: 1rem;
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-family: 'VT323', monospace;
+		width: 100px;
+		margin-left: 1rem;
+		padding: 0.5rem;
+		border-radius: 15px;
+		border: 2px solid v.$clr-border;
+		background-color: v.$clr-btn;
+		color: v.$clr-btn-text-main;
+	}
+	&__title {
+		font-size: 2rem;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	&__container-btn {
+		display: flex;
+		justify-content: center;
+	}
+}

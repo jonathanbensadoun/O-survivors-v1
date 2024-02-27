@@ -1,0 +1,53 @@
+@use '@scssVariables' as v;
+
+.container-form {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+.container-close-icon {
+	display: flex;
+	justify-content: flex-end;
+}
+.form-sign-up {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background-color: #01040d;
+	border: 3px solid v.$clr-border;
+	z-index: 2;
+	border-radius: 10px;
+	width: 335px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+	&__input {
+		margin-bottom: 1rem;
+		border-radius: 5px;
+		padding: v.$inp-padding;
+	}
+	&__label {
+		margin-bottom: 0.3rem;
+	}
+	&__btn {
+		font-family: 'VT323', system-ui, Avenir, Helvetica, Arial, sans-serif;
+		font-size: v.$fs-text;
+		width: 100%;
+		padding: 0.5rem;
+		background-color: v.$clr-secondary;
+		color: v.$clr-txt-light;
+		border-radius: 5px;
+		&:hover {
+			color: v.$clr-btn-hover;
+		}
+	}
+	&__close-icon {
+		text-align: end;
+		cursor: pointer;
+	}
+	&__title {
+		margin: 0 auto;
+		font-size: v.$fs-subtitle;
+	}
+}

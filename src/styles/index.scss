@@ -1,0 +1,39 @@
+@use 'reset';
+@use 'variables' as v;
+
+:root {
+	font-family: 'VT323', system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+html > * {
+	font-family: 'VT323', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body {
+	background-image: url('/img/mainBg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: v.$clr-txt-light;
+	font-size: v.$fs-text;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link {
+	color: v.$clr-txt-light;
+	cursor: pointer;
+	width: 211px;
+}
+.errorMessage {
+	color: v.$clr-error;
+}

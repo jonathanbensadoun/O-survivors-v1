@@ -1,0 +1,11 @@
+@use '@scssVariables' as v;
+
+.modalSucessSignUp__container {
+	width: 100vw;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	background-color: v.$clr-primary;
+	padding: 1rem;
+	border-radius: 5px;
+}

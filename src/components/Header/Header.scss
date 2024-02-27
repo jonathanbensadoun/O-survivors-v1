@@ -1,0 +1,146 @@
+// Importation des variables SCSS
+@use '@scssVariables' as v;
+
+.header {
+	position: sticky;
+	top: 0;
+	background-color: #01040d;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	height: 90px;
+	border-bottom: 3px solid v.$clr-border;
+
+	&__link {
+		width: 351px;
+	}
+}
+
+.logo-small {
+	width: 250px;
+}
+
+@media (min-width: 1024px) {
+	.header {
+		font-size: 1.2rem;
+		// position: sticky;
+		// top: 0;
+		height: 90px;
+		padding: 0.7rem 1rem;
+		&__icon {
+			margin-left: 1rem;
+		}
+
+		&__link {
+			width: 25%;
+		}
+
+		&__container-btn,
+		&__pseudo-profile {
+			width: 25%;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		&__nav ul {
+			display: flex;
+			align-items: center;
+			height: 90px;
+			justify-content: space-between;
+		}
+
+		&__nav li {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			padding: 0 1rem;
+
+			&:hover {
+				color: v.$clr-btn-hover;
+			}
+		}
+		&__btn {
+			font-size: 1rem;
+			text-transform: uppercase;
+			font-family: 'VT323', monospace;
+			width: 100px;
+			margin-left: 1rem;
+			padding: 0.5rem;
+			border-radius: 15px;
+			border: 2px solid v.$clr-border;
+			background-color: v.$clr-btn; // Utilisation de variable scss pour la couleur
+			color: v.$clr-btn-text-main; // Utilisation de variable scss pour la couleur
+
+			&:hover {
+				border: 3px solid v.$clr-btn-hover;
+				color: v.$clr-btn-hover;
+			}
+		}
+
+		&__btn--play {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			width: auto;
+			padding: 0.5rem 2rem;
+			transform: translate(-50%, -50%);
+			font-size: 2rem;
+			background-color: v.$clr-bg-trs-primary;
+			text-shadow: 1px 1px 1px black;
+			margin: 0;
+			border: 3px solid v.$clr-border;
+			animation: clignoter 550ms infinite;
+		}
+
+		@keyframes clignoter {
+			0%,
+			100% {
+				border-color: v.$clr-light;
+				color: v.$clr-light;
+			}
+			50% {
+				border-color: v.$clr-btn-hover;
+				color: v.$clr-btn-hover;
+			}
+		}
+	}
+
+	.dropdown {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	.dropdown-content {
+		background-color: #01040d;
+		position: absolute;
+		top: 90px;
+		left: 68%;
+		transform: translateX(-39%);
+		border: 3px solid v.$clr-border;
+		border-top: none;
+		border-radius: 0 0 15px 15px;
+		min-width: 144px;
+		z-index: 1;
+		padding: 0.3rem;
+	}
+
+	.dropdown-content a {
+		color: v.$clr-txt-light;
+		padding: 1rem;
+		text-decoration: none;
+		font-size: 1rem;
+
+		&:hover {
+			color: v.$clr-btn-hover;
+		}
+	}
+}
+.container-coins {
+	display: flex;
+	gap: 0.5rem;
+}

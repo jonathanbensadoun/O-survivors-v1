@@ -1,0 +1,103 @@
+{
+	"enemies": [
+		{
+			"enemy_code": 1,
+			"name": "Goblin",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 50,
+			"power": 10,
+			"speed": 3,
+			"pushback": 2,
+			"experience": 20,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 2,
+			"name": "Skeleton",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 40,
+			"power": 15,
+			"speed": 2,
+			"pushback": 1,
+			"experience": 25,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 3,
+			"name": "Orc",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 70,
+			"power": 12,
+			"speed": 4,
+			"pushback": 3,
+			"experience": 30,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 4,
+			"name": "Werewolf",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 80,
+			"power": 18,
+			"speed": 5,
+			"pushback": 2,
+			"experience": 35,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 5,
+			"name": "Dark Sorcerer",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 60,
+			"power": 20,
+			"speed": 3,
+			"pushback": 1,
+			"experience": 40,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 6,
+			"name": "Dark Sorcerer",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 60,
+			"power": 20,
+			"speed": 3,
+			"pushback": 1,
+			"experience": 40,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 7,
+			"name": "Dark Sorcerer",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 60,
+			"power": 20,
+			"speed": 3,
+			"pushback": 1,
+			"experience": 40,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 8,
+			"name": "Dark Sorcerer",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 60,
+			"power": 20,
+			"speed": 3,
+			"pushback": 1,
+			"experience": 40,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		},
+		{
+			"enemy_code": 9,
+			"name": "Dark Sorcerer",
+			"img": "/assets/menu/pixel-bg.jpg",
+			"health_points": 60,
+			"power": 20,
+			"speed": 3,
+			"pushback": 1,
+			"experience": 40,
+			"description": " Le monstre se distingue par une apparence terrifiante et souvent hors du commun. Sa silhouette peut être difforme, avec des membres disproportionnés, une peau écailleuse ou des traits démoniaques. "
+		}
+	]
+}

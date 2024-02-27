@@ -1,0 +1,37 @@
+@use '@scssVariables' as v;
+
+.legal {
+	margin: 1rem auto;
+	width: 75%;
+	background-color: v.$clr-trs-bg;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 5px double v.$clr-border;
+	border-radius: 10px;
+	padding: 1rem;
+	&__title {
+		text-align: center;
+		font-size: v.$fs-title;
+		padding-bottom: 0.5rem;
+	}
+	&__subtitle {
+		font-size: v.$fs-subtitle;
+		text-decoration: underline;
+		text-align: center;
+		padding: 0.5rem;
+	}
+	&__paragraph {
+		font-size: v.$fs-text;
+		padding-bottom: 0.5rem;
+		text-align: justify;
+	}
+}
+
+//soucis a régler le padding ne réponds pas
+@media (min-width: 1024px) {
+	.legal {
+		padding: 5rem;
+	}
+}

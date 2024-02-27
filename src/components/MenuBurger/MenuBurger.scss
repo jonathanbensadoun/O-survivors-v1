@@ -1,0 +1,47 @@
+@use '@scssVariables' as v;
+
+.menu {
+	min-height: calc(100vh - 90px);
+	width: 100%;
+	font-size: 1.4rem;
+
+	&__sign {
+		display: flex;
+		justify-content: center;
+		border-bottom: 3px solid v.$clr-border;
+	}
+
+	&__sign-btn {
+		margin: 1rem;
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-family: 'VT323', monospace;
+		width: 100px;
+		margin-left: 1rem;
+		padding: 0.5rem;
+		border-radius: 15px;
+		border: 2px solid v.$clr-border;
+		background-color: v.$clr-btn;
+		color: v.$clr-btn-text-main;
+	}
+	&__list li {
+		padding: 0.5rem 1rem;
+		border-bottom: 1px solid v.$clr-border;
+	}
+
+	&__dropdown-content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		& li {
+			margin: 0.5rem 0;
+			border: 1px solid v.$clr-border;
+			border-radius: v.$br;
+		}
+	}
+
+	.discover {
+		display: flex;
+	}
+}

@@ -1,0 +1,62 @@
+@use '@scssVariables' as v;
+
+.error {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 1rem;
+	padding: 1rem;
+
+	&__container-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		height: 50%;
+	}
+	&__404 {
+		text-transform: uppercase;
+		font-size: 3rem;
+	}
+	&__container-img {
+		height: 50%;
+	}
+	&__img {
+		width: 100%;
+		margin: 0 auto;
+		border-radius: v.$br;
+	}
+}
+
+@media (min-width: 1024px) {
+	.error {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		min-height: calc(100vh - 125px);
+		width: 100%;
+
+		&__container-img {
+			width: 50%;
+		}
+
+		&__img {
+			width: 87%;
+			border-radius: v.$br;
+		}
+		&__container-text {
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			width: 75%;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.underConstruction__img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}

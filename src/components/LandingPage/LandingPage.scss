@@ -1,0 +1,34 @@
+// Importation des variables SCSS
+@use '@scssVariables' as v;
+
+.landing-page-container {
+	background-image: url('/img/bg.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+// Media query pour les écrans de taille supérieure à 768px
+@media (min-width: 1024px) {
+	.landing-page-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		min-height: calc(100vh - 125px);
+		margin: 0 auto;
+	}
+
+	.intro-text {
+		text-align: justify;
+		width: 40%;
+		font-size: 1.7rem;
+		margin-top: 5rem;
+		margin-bottom: 3rem;
+		padding: 1rem;
+		border-radius: 15px;
+		background-color: #002a3daf;
+		border: 3px solid v.$clr-border;
+	}
+}

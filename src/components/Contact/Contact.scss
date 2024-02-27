@@ -1,0 +1,111 @@
+@use '@scssVariables' as v;
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	border-radius: 5px;
+	padding: 1rem;
+
+	&__container-img {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		width: 100%;
+		align-self: center;
+		border-radius: v.$br;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: v.$fs-title;
+		text-align: center;
+	}
+	&__subtitle {
+		font-size: v.$fs-subtitle;
+		text-align: center;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		width: 100%;
+	}
+	&__container-description {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		width: 100%;
+	}
+
+	&__input {
+		font-family: 'VT323', system-ui, Avenir, Helvetica, Arial, sans-serif;
+		font-size: v.$fs-text;
+		color: v.$clr-primary;
+		border-radius: 10px;
+		text-align: left;
+		padding: v.$inp-padding;
+	}
+
+	&__textarea {
+		font-family: 'VT323', system-ui, Avenir, Helvetica, Arial, sans-serif;
+		font-size: v.$fs-text;
+		color: v.$clr-primary;
+		border-radius: 10px;
+		text-align: left;
+		padding: v.$inp-padding;
+		height: 5rem;
+	}
+
+	&__submit {
+		font-family: 'VT323', system-ui, Avenir, Helvetica, Arial, sans-serif;
+		margin: 0 auto;
+		padding: 0.5rem;
+		background-color: v.$clr-btn-trs;
+		border: 3px solid v.$clr-border;
+		width: 150px;
+		color: v.$clr-txt-light;
+		font-size: v.$fs-text;
+		border-radius: v.$br;
+	}
+}
+
+@media (min-width: 1024px) {
+	.contact {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		min-height: calc(100vh - 125px);
+		margin: 0 auto;
+		width: 100%;
+		&__container-img {
+			width: 50%;
+		}
+
+		&__img {
+			width: 100%;
+			border-radius: v.$br;
+		}
+
+		&__form {
+			width: 50%;
+			gap: 1rem;
+		}
+
+		&__input {
+			font-size: v.$fs-text;
+			border-radius: v.$br;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.contact {
+		width: 90%;
+	}
+}
