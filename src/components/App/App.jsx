@@ -168,7 +168,7 @@ function App() {
 				<Route path="/lore" element={<UnderConstruction />} />
 				<Route path="/a-propos" element={<About />} />
 				{/* Affichage du composant Error404 si l'itinéraire n'est pas trouvé */}
-				<Route path="/*" element={<Error404 />} />
+				<Route path="*" element={<Error404 />} />
 			</Routes>
 
 			{/* Affichage  du Footer si l'appareil est un ordinateur de bureau ou un ordinateur portable   */}
