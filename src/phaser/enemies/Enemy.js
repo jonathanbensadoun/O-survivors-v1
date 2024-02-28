@@ -56,7 +56,7 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
 			} else {
 				this.anims.play(`${this.name}_run`, true); // Joue l'animation de course vers la gauche
 				this.scaleX = -1; // Inverse l'échelle de l'ennemi pour qu'il regarde vers la gauche
-				this.body.offset.x = 80; // Ajuste le décalage horizontal du corps physique
+				this.body.offset.x = 50; // Ajuste le décalage horizontal du corps physique
 				this.body.offset.y = 30; // Ajuste le décalage vertical du corps physique
 			}
 		}
