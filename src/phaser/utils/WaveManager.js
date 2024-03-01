@@ -67,7 +67,7 @@ export default class WaveManager {
 
 					const roundedTimeElasped = Math.floor(timeElapsed);
 
-					if (roundedTimeElasped === 10) {
+					if (roundedTimeElasped === 120) {
 						const boss = scene.minotaur
 							.create(spawnX, spawnY, 'minotaur', scene.character)
 							.setDepth(3);
